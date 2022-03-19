@@ -1,0 +1,14 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    button{
+        border: none;
+        border-radius: 25px;
+        color: $color3;
+        background-color: $color7;
+        font-family: roboto;
+        font-size: 12px;
+        margin-top: 2rem;
+    
+    }
+}
