@@ -5,72 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/style.css">
     <title>Lolo Store</title>
 </head>
 
 <body>
     <header>
-        <nav class="barra navbar navbar-expand-lg navbar-light ">
-            <div class="d-flex flex-column">
-                <h1>Lolo Store</h1>
-                <a class="navbar-brand" href="#"><img src="/assets/logololo.png" alt="logololo"></a>
-            </div>
-            <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button></div>
-
-
-        </nav>
-        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 submenu">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre nosotras</a>
+        <nav class="nav">
+            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1792 1792"
+                    style="enable-background:new 0 0 1792 1792;" xml:space="preserve">
+                    <path
+                        d="M1673.9,1363.2L1673.9,1363.2c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3h1366.8C1631.5,1268.5,1673.9,1310.9,1673.9,1363.2z" />
+                    <path
+                        d="M1673.9,895.6L1673.9,895.6c0,52.3-42.4,94.3-94.3,94.3H213c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3h1366.6C1631.5,800.8,1673.9,843.2,1673.9,895.6z" />
+                    <path
+                        d="M1673.9,427.9L1673.9,427.9c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3h1366.8C1631.5,333.2,1673.9,375.6,1673.9,427.9z" />
+                </svg>
+                <svg width="20px" height="20px" viewBox="0 0 20 20" class="close" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.17158 14.2426C6.78106 14.6332 6.14789 14.6332 5.75737 14.2426C5.36684 13.8521 5.36684 13.2189 5.75737 12.8284L12.8284 5.75735C13.219 5.36682 13.8521 5.36682 14.2427 5.75735C14.6332 6.14787 14.6332 6.78104 14.2427 7.17156L7.17158 14.2426Z"
+                        fill="currentColor" />
+                    <path
+                        d="M5.75737 7.17152C5.36684 6.781 5.36684 6.14783 5.75737 5.75731C6.14789 5.36679 6.78106 5.36679 7.17158 5.75731L14.2427 12.8284C14.6332 13.2189 14.6332 13.8521 14.2427 14.2426C13.8521 14.6331 13.219 14.6331 12.8284 14.2426L5.75737 7.17152Z"
+                        fill="currentColor" />
+                </svg>
+            </label>
+            <h1 class="logo">Lolo Store</h1>
+            <ul class="nav__menu">
+                <li class="menu__logo">
+                    <img src="./assets/logololo.png" alt="logololo">
+                <li><a href="#">Sobre Nosotras</a></li>
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Envios</a></li>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ventas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Envios</a>
-                </li>
-
             </ul>
-        </div>
+        </nav>
     </header>
-
-
-    <section class="hero">
-        <form action="https://www.instagram.com/lolostore_ok/">
-            <button class="px-5 py-3">Contactanos</button>
-        </form>
+    <!--Seccion de Inicio/Hero-->
+    <section class="hero" id="hero">
+        <div class="btnHeroCenter">
+            <form action="https://www.instagram.com/lolostore_ok/">
+                <button>Contactanos</button>
+            </form>
+        </div>
     </section>
 
 
-    <section class="sobreNosotras text-center p-5">
+    <section class="sobre__nosotras">
         <h2>Sobre Nosotras</h2>
-        <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium consequatur iure quidem
-            sunt fugiat,
-            architecto consequuntur ducimus debitis corrupti sint soluta facilis similique esse deleniti, assumenda et,
-            eligendi cupiditate? At?
-            Illum quae dolore repellat! Veniam nesciunt atque illum explicabo voluptas sunt odit eaque amet nihil vero
-            pariatur perferendis totam blanditiis optio beatae, ad magnam magni reiciendis nisi consectetur maiores.
-            Quidem!</p>
+        <div class="conteiner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, reiciendis voluptatem ullam porro,
+                assumenda cupiditate hic quia fuga minus, ab distinctio consequatur? Voluptate unde, sed quis
+                necessitatibus perferendis nulla nisi?</p>
+        </div>
     </section>
 
-    <a class="whatsapp" href="#"> <img src="/assets/whatsapp.png" alt="whatsapp">
+
+    <a class="whatsapp" href="#"> <img src="./assets/whatsapp.png" alt="whatsapp">
     </a>
     <section class="ventasXMayor">
 
         <div class='container'>
             <h2>Ventas por Mayor y Menor</h2>
             <div class="carrusel slider">
-                <img src="assets/remera2.jpg" alt="pantalon">
-                <img src="assets/pantalon.jpg" alt="pantalon">
-                <img src="assets/remera.jpg" alt="pantalon">
+                <img src="./assets/remera2.jpg" alt="pantalon">
+                <img src="./assets/pantalon.jpg" alt="pantalon">
+                <img src="./assets/remera.jpg" alt="pantalon">
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis
@@ -85,13 +89,13 @@
 
     <section>
         <div class="galeria-conteiner">
-            <div class="item1"><img src="/assets/pantalon5.jpeg" alt="pantalon5" class="galeria__img">
+            <div class="item1"><img src="./assets/pantalon5.jpeg" alt="pantalon5" class="galeria__img">
             </div>
-            <div class="item2"><img src="/assets/pantalon3.jpeg" alt="pantalon3" class="galeria__img">
+            <div class="item2"><img src="./assets/pantalon3.jpeg" alt="pantalon3" class="galeria__img">
             </div>
-            <div class="item3"><img src="/assets/pantalon2.jpeg" alt="pantalon2" class="galeria__img">
+            <div class="item3"><img src="./assets/pantalon2.jpeg" alt="pantalon2" class="galeria__img">
             </div>
-            <div class="item4"><img src="/assets/pantalon6.jpeg" alt="pantalon6" class="galeria__img">
+            <div class="item4"><img src="./assets/pantalon6.jpeg" alt="pantalon6" class="galeria__img">
             </div>
         </div>
     </section>
@@ -101,7 +105,7 @@
         <div class="envios">
 
             <h2>Envíos</h2>
-            <img src="/assets/envios.png" alt="logoEnvios">
+            <img src="./assets/envios.png" alt="logoEnvios">
 
             <div id="mobile">
                 <div class="chart">
@@ -199,16 +203,16 @@
 
     <footer>
         <div class="footerDiv">
-            <img src="/assets/logololo.png" alt="logololo">
+            <img src="./assets/logololo.png" alt="logololo">
             <h3>Lolo Store</h3>
         </div>
         <div class="footerDiv">
             <h3>Seguinos!</h3>
-            <img src="/assets/instagram.png" alt="instagram">
+            <img src="./assets/instagram.png" alt="instagram">
         </div>
         <div class="footerDiv">
             <h4>Métodos de pago</h4>
-            
+
             <p>Efectivo</p>
             <p>Mercado pago</p>
         </div>

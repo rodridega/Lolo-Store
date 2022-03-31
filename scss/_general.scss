@@ -1,6 +1,60 @@
-body{
-    background-color: $color4;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: $color4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding: 1.2rem 1.2rem;
+  font-weight: bold;
+  color: $color3;
+  margin: none;
+}
+
+/*Fin del menu responsive*/
+
+body {
+  height: 100vh;
+}
+
+.conteiner {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/pantalon.jpg);
+  color: $color7;
+  background-position: center center;
+}
+
+.btnHeroCenter {
+  text-align: center;
+}
+
+
+
+button:hover {
+  background-color: $color7;
+  color: $color6;
+}
+
+.sobre__nosotras {
+  padding-bottom: 10rem;
 }
