@@ -1,14 +1,24 @@
-.hero{
-    display: flex;
-    justify-content: center;
-    button{
-        border: none;
-        border-radius: 25px;
-        color: $color3;
-        background-color: $color7;
-        font-family: roboto;
-        font-size: 12px;
-        margin-top: 2rem;
-    
-    }
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 200px;
+  .btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+  }
+ 
+  button {
+    border-radius: 2rem;
+    width: 180px;
+    height: 45px;
+    font-size: 13px;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    background-color: #000000;
+    color: $color9;
+   
+  }
 }

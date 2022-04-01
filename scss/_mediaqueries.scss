@@ -1,6 +1,58 @@
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
+  .banner {
+    opacity: 80%;
+    background-image: none;
+    flex-direction: row-reverse;
+    box-shadow: none;
+    background-color: #b8acb3;
+    justify-content: flex-end;
+    a {
+      margin-left: 20px;
+    }
+    h1 {
+      color: $color3;
+    }
+  }
+
+  #navbarNavAltMarkup {
+    opacity: 80%;
+    flex-direction: row-reverse;
+    height: 120px;
+    background-color: #b8acb3;
+    flex-basis: 100%;
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    a {
+      font-size: 1.7rem;
+      margin: 0 15px;
+      color: $color3;
+    }
+  }
+
+  #logo {
+    width: 70px;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/assets/lolo-ban.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .ventasXMayor {
-    .container {
+    .containerMio {
       display: grid;
       grid-template-columns: 2 (repeat(1fr));
       grid-template-areas:
@@ -24,24 +76,25 @@
         margin: 0rem 10rem;
         font-size: 30px;
         padding: 0rem;
-
       }
 
       p {
         grid-area: parrafo;
         font-size: 15px;
         text-align: left;
-        margin: 0rem 12rem;
+        margin: 0rem 3rem;
         padding: 0;
       }
       button {
         grid-area: boton;
         justify-self: center;
         width: 30%;
-        margin: 0rem ;
+        margin: 0rem;
       }
     }
   }
+}
+@media only screen and (min-width: 1200px) {
   .galeria-conteiner {
     margin: 5rem 0rem;
     display: grid;
@@ -53,6 +106,7 @@
 
     .item1 {
       grid-area: uno;
+      height: 100%;
     }
     .item2 {
       grid-area: dos;
@@ -76,7 +130,7 @@
   }
   .envios {
     padding: 8rem;
-    img{
+    img {
       width: 10%;
     }
     #mobile {
@@ -85,13 +139,13 @@
     #desk {
       display: flex;
       padding: 0rem 3rem;
-      
+
       .cards {
         width: 200px;
         height: 280px;
         display: flex;
         flex-direction: column;
-        h4{
+        h4 {
           font-family: bunya;
           font-weight: lighter;
           font-size: 30px;
@@ -114,26 +168,26 @@
       }
     }
   }
-  .whatsapp{
+  .whatsapp {
     width: 10%;
   }
-  footer{
+  footer {
     flex-direction: row;
     height: 400px;
-    .footerDiv{
+    .footerDiv {
       width: 250px;
-      img{
+      img {
         width: 50%;
       }
-      h3{
+      h3 {
         font-size: 50px;
         margin: 5px 0px;
       }
-      h4{
+      h4 {
         font-size: 30px;
         font-weight: lighter;
       }
-      p{
+      p {
         font-size: 25px;
       }
     }

@@ -1,228 +1,265 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Lolo Store</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="nav">
-            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
-            <label for="nav__checkbox" class="nav__toggle">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1792 1792"
-                    style="enable-background:new 0 0 1792 1792;" xml:space="preserve">
-                    <path
-                        d="M1673.9,1363.2L1673.9,1363.2c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3h1366.8C1631.5,1268.5,1673.9,1310.9,1673.9,1363.2z" />
-                    <path
-                        d="M1673.9,895.6L1673.9,895.6c0,52.3-42.4,94.3-94.3,94.3H213c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3h1366.6C1631.5,800.8,1673.9,843.2,1673.9,895.6z" />
-                    <path
-                        d="M1673.9,427.9L1673.9,427.9c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3h1366.8C1631.5,333.2,1673.9,375.6,1673.9,427.9z" />
-                </svg>
-                <svg width="20px" height="20px" viewBox="0 0 20 20" class="close" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.17158 14.2426C6.78106 14.6332 6.14789 14.6332 5.75737 14.2426C5.36684 13.8521 5.36684 13.2189 5.75737 12.8284L12.8284 5.75735C13.219 5.36682 13.8521 5.36682 14.2427 5.75735C14.6332 6.14787 14.6332 6.78104 14.2427 7.17156L7.17158 14.2426Z"
-                        fill="currentColor" />
-                    <path
-                        d="M5.75737 7.17152C5.36684 6.781 5.36684 6.14783 5.75737 5.75731C6.14789 5.36679 6.78106 5.36679 7.17158 5.75731L14.2427 12.8284C14.6332 13.2189 14.6332 13.8521 14.2427 14.2426C13.8521 14.6331 13.219 14.6331 12.8284 14.2426L5.75737 7.17152Z"
-                        fill="currentColor" />
-                </svg>
-            </label>
-            <h1 class="logo">Lolo Store</h1>
-            <ul class="nav__menu">
-                <li class="menu__logo">
-                    <img src="./assets/logololo.png" alt="logololo">
-                <li><a href="#">Sobre Nosotras</a></li>
-                <li><a href="#">Ventas</a></li>
-                <li><a href="#">Envios</a></li>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="banner">
+            <h1>Lolo Store</h1>
+            <a class="navbar-brand" href="index.html#hero"
+              ><img src="/assets/logololo.png" alt="" id="logo"
+            /></a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#sobre__nosotras"
+                >Sobre Nosotras</a
+              >
+              <a class="nav-link" href="index.html#ventas">Ventas</a>
+              <a class="nav-link" href="index.html#envios">Envios</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!--Seccion de Inicio/Hero-->
     <section class="hero" id="hero">
-        <div class="btnHeroCenter">
-            <form action="https://www.instagram.com/lolostore_ok/">
-                <button>Contactanos</button>
-            </form>
-        </div>
+      <div class="btn__hero">
+        <form action="https://www.instagram.com/lolostore_ok/">
+          <button class="btn">Contactanos</button>
+        </form>
+      </div>
     </section>
 
-
-    <section class="sobre__nosotras">
-        <h2>Sobre Nosotras</h2>
-        <div class="conteiner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, reiciendis voluptatem ullam porro,
-                assumenda cupiditate hic quia fuga minus, ab distinctio consequatur? Voluptate unde, sed quis
-                necessitatibus perferendis nulla nisi?</p>
-        </div>
+    <section class="sobre__nosotras text-center" id="sobre__nosotras">
+      <h2 class="my-5">Sobre Nosotras</h2>
+      <div class="conteiner">
+        <p>
+          ¡Hola! ¿Como estás? ¿Nos conoces? Nuestro nombre es Aixa y Lorena.
+          Somos madre e hija y en el año <span>2020</span> decidimos emprender
+          este sueño que es LOLO STORE . Un pequeño emprendimiento a que nació
+          jugando en el living de casa durante la cuarentena. LOLO nace de la
+          necesidad de traer al mercado un producto que sea competitivo en el
+          mercado por su calidad y precio pero sobre todo que nos brinde la
+          comodidad que todos queremos tener en casa Junto con toda la familia
+          llevamos a cabo este proyecto que gracias a vos, todos los días crece
+          un poquito más. ¡Que tengas un muy lindo día... y ojalá como nosotras
+          puedas llevar tu sueño a cabo!
+          <br />
+          Contamos con dos secciones, una mayorista u uña minorista. En caso de
+          querer realizar compras mayorista, ponte en contacto con nosotras y te
+          haremos llegar nuestra lista de productos con detalle de precios y
+          stock
+        </p>
+      </div>
     </section>
-
-
-    <a class="whatsapp" href="#"> <img src="./assets/whatsapp.png" alt="whatsapp">
+    <a class="whatsapp" href="#">
+      <img src="./assets/icons8-whatsapp.svg" alt="whatsapp" />
     </a>
-    <section class="ventasXMayor">
-
-        <div class='container'>
-            <h2>Ventas por Mayor y Menor</h2>
-            <div class="carrusel slider">
-                <img src="./assets/remera2.jpg" alt="pantalon">
-                <img src="./assets/pantalon.jpg" alt="pantalon">
-                <img src="./assets/remera.jpg" alt="pantalon">
-            </div>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis
-                eum
-                esse, cumque cum necessitatibus, atque vitae eos quas cupiditate voluptates amet aliquid rerum incidunt,
-                id distinctio harum itaque consequuntur?
-                Dolore, voluptatum!</p>
-            <button>Seguinos en Instagram</button>
+    <section class="ventasXMayor" id="ventas">
+      <div class="containerMio">
+        <h2>Ventas por Mayor y Menor</h2>
+        <div class="carrusel slider">
+          <img src="./assets/remera2.jpg" alt="pantalon" />
+          <img src="./assets/pantalon.jpg" alt="pantalon" />
+          <img src="./assets/remera.jpg" alt="pantalon" />
         </div>
-    </section>
 
+        <p class="fs-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          officiis eum esse, cumque cum necessitatibus, atque vitae eos quas
+          cupiditate voluptates amet aliquid rerum incidunt, id distinctio harum
+          itaque consequuntur? Dolore, voluptatum!
+        </p>
+        <button>Seguinos en Instagram</button>
+      </div>
+    </section>
 
     <section>
-        <div class="galeria-conteiner">
-            <div class="item1"><img src="./assets/pantalon5.jpeg" alt="pantalon5" class="galeria__img">
-            </div>
-            <div class="item2"><img src="./assets/pantalon3.jpeg" alt="pantalon3" class="galeria__img">
-            </div>
-            <div class="item3"><img src="./assets/pantalon2.jpeg" alt="pantalon2" class="galeria__img">
-            </div>
-            <div class="item4"><img src="./assets/pantalon6.jpeg" alt="pantalon6" class="galeria__img">
-            </div>
+      <div class="galeria-conteiner">
+        <div class="item1">
+          <img
+            src="./assets/pantalon5.jpeg"
+            alt="pantalon5"
+            class="galeria__img"
+          />
         </div>
+        <div class="item2">
+          <img
+            src="./assets/pantalon3.jpeg"
+            alt="pantalon3"
+            class="galeria__img"
+          />
+        </div>
+        <div class="item3">
+          <img
+            src="./assets/pantalon2.jpeg"
+            alt="pantalon2"
+            class="galeria__img"
+          />
+        </div>
+        <div class="item4">
+          <img
+            src="./assets/pantalon6.jpeg"
+            alt="pantalon6"
+            class="galeria__img"
+          />
+        </div>
+      </div>
     </section>
-
 
     <section>
-        <div class="envios">
+      <div class="envios" id="envios">
+        <h2>Envíos</h2>
+        <img src="./assets/envios.png" alt="logoEnvios" />
 
-            <h2>Envíos</h2>
-            <img src="./assets/envios.png" alt="logoEnvios">
-
-            <div id="mobile">
-                <div class="chart">
-                    <h4>Lunes</h4>
-                    <p>San Miguel</p>
-                    <p>Muñiz</p>
-                    <p>Bella Vista</p>
-                    <p>José C. Paz</p>
-                    <p>Moreno</p>
-                </div>
-                <div class="chart">
-                    <h4>Martes</h4>
-                    <p>Don Torcuato</p>
-                    <p> Pacheco</p>
-                    <p>El Talar</p>
-                    <p>Tigre Centro</p>
-                    <p>Virreyes</p>
-                    <p>San Fernando</p>
-                    <p>Beccar</p>
-                    <p>La Lucila</p>
-                    <p>Olivos</p>
-                    <p>San Isidro</p>
-                    <p>Boulogne </p>
-                    <p>Martinez</p>
-                    <p>Munro</p>
-                    <p>Vte. Lopez</p>
-                </div>
-                <div class="chart">
-                    <h4>Miercoles</h4>
-                    <p>Capital Federal.</p>
-                </div>
-                <div class="chart">
-                    <h4>Jueves</h4>
-                    <p>Derqui</p>
-                    <p>Pilar Centro</p>
-                    <p>Del Viso</p>
-                    <p>Garin</p>
-                    <p>Polvorines</p>
-                    <p>Grand Bourg</p>
-                    <p>Pablo Nogués</p>
-                    <p>Villa de Mayo</p>
-                    <p>Adolfo Sourdeaux</p>
-                    <p>Tortuguitas</p>
-
-                </div>
-                <div class="chart">
-                    <h4>Viernes</h4>
-                    <p>William Morris</p>
-                    <p>Hurlingham</p>
-                    <p>Villa Tesei</p>
-                    <p>Palomar</p>
-                    <p>Caseros</p>
-                    <p>Tres de Febrero</p>
-                    <p>Santos Lugares</p>
-                    <p>Sáenz Peña</p>
-                    <p>San Martín</p>
-                    <p>Morón</p>
-                    <p>Castelar</p>
-                    <p>Ituzaingó</p>
-                    <p>Ramos Mejía</p>
-
-                </div>
-            </div>
-
-            <div id="desk">
-                <div class="cards">
-                    <h4>Lunes</h4>
-                    <p>San Miguel/ Muñiz/ Bella Vista/ José C. Paz/ Moreno.</p>
-                </div>
-                <div class="cards">
-                    <h4>Martes</h4>
-                    <p>Don Torcuato/ Pacheco/ El Talar/ Tigre Centro/ Virreyes/ San Fernando/ Beccar/ La Lucila/ Olivos/
-                        San Isidro/ Boulogne/ Martinez/ Munro/ Vte. Lopez.</p>
-                </div>
-                <div class="cards">
-                    <h4>Miercoles</h4>
-                    <p>Capital Federal.</p>
-                </div>
-                <div class="cards">
-                    <h4>Jueves</h4>
-                    <p>Derqui/ Pilar Centro/ Del Viso/ Garin/ Polvorines/ Grand Bourg/ Pablo Nogués/ Villa de Mayo/
-                        Adolfo Sourdeaux/ Tortuguitas.</p>
-                </div>
-                <div class="cards">
-                    <h4>Viernes</h4>
-                    <p>William Morris/ Hurlingham/ Villa Tesei/ Palomar/ Caseros/ Tres de Febrero/ Santos Lugares/ Sáenz
-                        Peña/ San Martín/ Morón/ Castelar/ Ituzaingó/ Ramos Mejía.</p>
-                </div>
-            </div>
-
+        <div id="mobile">
+          <div class="chart">
+            <h4>Lunes</h4>
+            <p>San Miguel</p>
+            <p>Muñiz</p>
+            <p>Bella Vista</p>
+            <p>José C. Paz</p>
+            <p>Moreno</p>
+          </div>
+          <div class="chart">
+            <h4>Martes</h4>
+            <p>Don Torcuato</p>
+            <p>Pacheco</p>
+            <p>El Talar</p>
+            <p>Tigre Centro</p>
+            <p>Virreyes</p>
+            <p>San Fernando</p>
+            <p>Beccar</p>
+            <p>La Lucila</p>
+            <p>Olivos</p>
+            <p>San Isidro</p>
+            <p>Boulogne</p>
+            <p>Martinez</p>
+            <p>Munro</p>
+            <p>Vte. Lopez</p>
+          </div>
+          <div class="chart">
+            <h4>Miercoles</h4>
+            <p>Capital Federal.</p>
+          </div>
+          <div class="chart">
+            <h4>Jueves</h4>
+            <p>Derqui</p>
+            <p>Pilar Centro</p>
+            <p>Del Viso</p>
+            <p>Garin</p>
+            <p>Polvorines</p>
+            <p>Grand Bourg</p>
+            <p>Pablo Nogués</p>
+            <p>Villa de Mayo</p>
+            <p>Adolfo Sourdeaux</p>
+            <p>Tortuguitas</p>
+          </div>
+          <div class="chart">
+            <h4>Viernes</h4>
+            <p>William Morris</p>
+            <p>Hurlingham</p>
+            <p>Villa Tesei</p>
+            <p>Palomar</p>
+            <p>Caseros</p>
+            <p>Tres de Febrero</p>
+            <p>Santos Lugares</p>
+            <p>Sáenz Peña</p>
+            <p>San Martín</p>
+            <p>Morón</p>
+            <p>Castelar</p>
+            <p>Ituzaingó</p>
+            <p>Ramos Mejía</p>
+          </div>
         </div>
+
+        <div id="desk">
+          <div class="cards">
+            <h4>Lunes</h4>
+            <p>San Miguel/ Muñiz/ Bella Vista/ José C. Paz/ Moreno.</p>
+          </div>
+          <div class="cards">
+            <h4>Martes</h4>
+            <p>
+              Don Torcuato/ Pacheco/ El Talar/ Tigre Centro/ Virreyes/ San
+              Fernando/ Beccar/ La Lucila/ Olivos/ San Isidro/ Boulogne/
+              Martinez/ Munro/ Vte. Lopez.
+            </p>
+          </div>
+          <div class="cards">
+            <h4>Miercoles</h4>
+            <p>Capital Federal.</p>
+          </div>
+          <div class="cards">
+            <h4>Jueves</h4>
+            <p>
+              Derqui/ Pilar Centro/ Del Viso/ Garin/ Polvorines/ Grand Bourg/
+              Pablo Nogués/ Villa de Mayo/ Adolfo Sourdeaux/ Tortuguitas.
+            </p>
+          </div>
+          <div class="cards">
+            <h4>Viernes</h4>
+            <p>
+              William Morris/ Hurlingham/ Villa Tesei/ Palomar/ Caseros/ Tres de
+              Febrero/ Santos Lugares/ Sáenz Peña/ San Martín/ Morón/ Castelar/
+              Ituzaingó/ Ramos Mejía.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <footer>
-        <div class="footerDiv">
-            <img src="./assets/logololo.png" alt="logololo">
-            <h3>Lolo Store</h3>
-        </div>
-        <div class="footerDiv">
-            <h3>Seguinos!</h3>
-            <img src="./assets/instagram.png" alt="instagram">
-        </div>
-        <div class="footerDiv">
-            <h4>Métodos de pago</h4>
+      <div class="footerDiv">
+        <img src="./assets/logololo.png" alt="logololo" />
+        <h3>Lolo Store</h3>
+      </div>
+      <div class="footerDiv">
+        <h3>Seguinos!</h3>
+        <img src="./assets/instagram_icon-icons.com_65435.svg" alt="instagram" id="instagram"/>
+      </div>
+      <div class="footerDiv">
+        <h4>Métodos de pago</h4>
 
-            <p>Efectivo</p>
-            <p>Mercado pago</p>
-        </div>
-
+        <p>Efectivo</p>
+        <p>Mercado pago</p>
+      </div>
     </footer>
 
-
-
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
