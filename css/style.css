@@ -155,7 +155,7 @@ footer #instragram {
 
 @font-face {
   font-family: bunya;
-  src: url(/fonts/Bunya-Regular_PERSONAL.ttf);
+  src: url(../fonts/Bunya-Regular_PERSONAL.ttf);
 }
 
 @font-face {
@@ -175,7 +175,7 @@ footer #instragram {
 
 @font-face {
   font-family: roboto;
-  src: url(/fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 .galeria-conteiner {
