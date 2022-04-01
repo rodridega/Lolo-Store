@@ -614,4 +614,18 @@ body {
     font-size: 25px;
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  .galery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeria-conteiner {
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
