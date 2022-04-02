@@ -8,7 +8,7 @@
 }
 
 .banner {
-  background-image: url(/assets/lolo-ban.png);
+  background-image: url(../assets/lolo-ban.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,6 +58,7 @@
   margin: 0;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .container-fluid {
@@ -104,6 +105,10 @@
   color: #CEBFCB;
 }
 
+#hero button:hover {
+  color: white;
+}
+
 .sobre__nosotras {
   margin-top: 5rem;
   padding-bottom: 5rem;
@@ -113,6 +118,10 @@
 .sobre__nosotras .conteiner {
   padding: 0rem 3.5rem;
   line-height: normal;
+}
+
+.sobre__nosotras .conteiner p {
+  font-family: roboto;
 }
 
 .sobre__nosotras .conteiner span {
@@ -160,12 +169,12 @@ footer #instragram {
 
 @font-face {
   font-family: bunya-thin;
-  src: url(/fonts/Bunya-Thin_PERSONAL.ttf);
+  src: url(../fonts/Bunya-Thin_PERSONAL.ttf);
 }
 
 @font-face {
   font-family: bunya-light;
-  src: url(/fonts/Bunya-Light_PERSONAL.ttf);
+  src: url(../fonts/Bunya-Light_PERSONAL.ttf);
 }
 
 @font-face {
@@ -206,6 +215,10 @@ footer #instragram {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.galeria-conteiner div img {
+  border-radius: 5px;
 }
 
 .galeria-conteiner .item1 {
@@ -249,9 +262,11 @@ body {
 }
 
 .ventasXMayor .containerMio p {
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 2.5rem;
   text-align: center;
+  font-family: roboto;
+  font-size: 15px;
 }
 
 .ventasXMayor h2 {
@@ -285,16 +300,28 @@ body {
   font-size: 10px;
 }
 
-.ventasXMayor button {
+.ventasXMayor a {
+  width: 50%;
+}
+
+.ventasXMayor #botonVentas {
   border: none;
   border-radius: 20px;
   font-family: roboto;
   font-size: 14px;
-  width: 50%;
-  height: 42px;
+  width: 70%;
   background-color: #F8F0EF;
   margin: 2.5rem;
   padding: 0.75rem 0rem;
+}
+
+.ventasXMayor #carouselExampleControls {
+  z-index: 1;
+  width: 90%;
+}
+
+.ventasXMayor #carouselExampleControls .carousel-inner {
+  height: 468px;
 }
 
 .envios {
@@ -323,10 +350,13 @@ body {
   width: 20%;
 }
 
+.envios p {
+  font-family: roboto;
+}
+
 .envios h2 {
   font-family: bunya;
   color: #707070;
-  font-weight: lighter;
 }
 
 .envios h4 {
@@ -353,31 +383,38 @@ body {
   text-align: right;
 }
 
+.envios .chart {
+  margin-top: 3rem;
+}
+
 .envios .chart h4 {
   font-size: 20px;
-  font-family: bunya-thin;
   margin-bottom: 3rem;
   color: #707070;
   font-weight: lighter;
 }
 
 .envios .chart p {
-  font-family: bunya-light;
-  font-size: 18px;
+  font-family: bunya;
+  font-size: 16px;
   line-height: 0.3;
 }
 
 .whatsapp {
+  z-index: 3;
   position: fixed;
-  right: -25px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 65px;
 }
 
 .whatsapp img {
-  width: 50%;
+  width: 80%;
 }
 
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
   .banner {
     opacity: 80%;
     background-image: none;
@@ -397,6 +434,7 @@ body {
   }
   .banner h1 {
     color: #F9E4E2;
+    font-size: 2rem;
   }
   #navbarNavAltMarkup {
     opacity: 80%;
@@ -416,7 +454,7 @@ body {
             justify-content: space-evenly;
   }
   #navbarNavAltMarkup a {
-    font-size: 1.7rem;
+    font-size: 1rem;
     margin: 0 15px;
     color: #F9E4E2;
   }
@@ -438,11 +476,134 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     height: 350px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/lolo-ban.png);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/lolo-ban.png);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/lolo-ban.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/lolo-ban.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .ventasXMayor .containerMio #carouselExampleControls {
+    width: 80%;
+  }
+  .ventasXMayor .containerMio #carouselExampleControls .carousel-inner {
+    height: 800px;
+  }
+  .ventasXMayor .containerMio p {
+    margin: 0rem 3rem;
+  }
+  .galery {
+    margin: 2rem 1rem;
+  }
+  .galeria-conteiner {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "uno dos" "tres cuatro";
+    grid-gap: 1rem;
+    padding: 0;
+  }
+  .galeria-conteiner div img {
+    border-radius: 0px;
+    width: 100%;
+    margin: 0;
+  }
+  .galeria-conteiner .item1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: uno;
+    height: 100%;
+  }
+  .galeria-conteiner .item2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: dos;
+  }
+  .galeria-conteiner .item3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: tres;
+  }
+  .galeria-conteiner .item4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cuatro;
+    height: 100%;
+  }
+  .envios img {
+    width: 10%;
+    margin-bottom: 2rem;
+  }
+  .envios #mobile {
+    display: none;
+  }
+  .envios #desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .envios #desktop .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 3rem;
+    margin: 1rem 0rem;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 1px 3px 3px 1px #e6e6e6;
+            box-shadow: 1px 3px 3px 1px #e6e6e6;
+    border-radius: 25px;
+  }
+  .envios #desktop .cards h4 {
+    font-family: bunya;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 5px;
+    padding-bottom: 1rem;
+  }
+  .envios #desktop .cards p {
+    color: #DE988C;
+    font-family: roboto;
+    font-size: 18px;
+    margin: 0;
+  }
+  .envios p {
+    font-size: 20px;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+  }
+  footer .footerDiv img {
+    width: 20%;
+  }
+  footer .footerDiv h3 {
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+  footer .footerDiv h4 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  footer .footerDiv p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #F8F0EF;
+  }
+  .sobre__nosotras .conteiner {
+    padding: 0rem 12rem;
   }
   .ventasXMayor .containerMio {
     display: -ms-grid;
@@ -451,20 +612,15 @@ body {
         grid-template-columns: 2 repeat(1fr);
         grid-template-areas: "carrusel titulo" "carrusel parrafo" "carrusel boton";
   }
-  .ventasXMayor .containerMio .slider {
+  .ventasXMayor .containerMio #carouselExampleControls {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: carrusel;
     margin: 1.5rem 5rem;
-    width: 400px;
   }
-  .ventasXMayor .containerMio .slider img {
-    margin: 0;
-    width: 100%;
-  }
-  .ventasXMayor .containerMio ::-webkit-scrollbar {
-    display: none;
+  .ventasXMayor .containerMio #carouselExampleControls .carousel-inner {
+    height: 500px;
   }
   .ventasXMayor .containerMio h2 {
     -ms-grid-row: 1;
@@ -492,9 +648,6 @@ body {
     width: 30%;
     margin: 0rem;
   }
-}
-
-@media only screen and (min-width: 1200px) {
   .galeria-conteiner {
     margin: 5rem 0rem;
     display: -ms-grid;
@@ -539,79 +692,8 @@ body {
        object-fit: contain;
     margin: 0;
   }
-  .envios {
-    padding: 8rem;
-  }
-  .envios img {
-    width: 10%;
-  }
-  .envios #mobile {
-    display: none;
-  }
-  .envios #desk {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0rem 3rem;
-  }
-  .envios #desk .cards {
-    width: 200px;
-    height: 280px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-shadow: 0px 0px 3px gray;
-            box-shadow: 0px 0px 3px gray;
-    background-color: white;
-    border-radius: 25px;
-    margin: 0rem 0.25rem;
-  }
-  .envios #desk .cards h4 {
-    font-family: bunya;
-    font-weight: lighter;
-    font-size: 30px;
-    margin-top: 5px;
-  }
-  .envios #desk .cards h4:before,
-  .envios #desk .cards h4:after {
-    display: none;
-  }
-  .envios #desk .cards p {
-    color: #DE988C;
-    font-family: roboto;
-    font-size: 15px;
-    margin: 15px;
-  }
   .whatsapp {
     width: 10%;
-  }
-  footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: 400px;
-  }
-  footer .footerDiv {
-    width: 250px;
-  }
-  footer .footerDiv img {
-    width: 50%;
-  }
-  footer .footerDiv h3 {
-    font-size: 50px;
-    margin: 5px 0px;
-  }
-  footer .footerDiv h4 {
-    font-size: 30px;
-    font-weight: lighter;
-  }
-  footer .footerDiv p {
-    font-size: 25px;
   }
 }
 

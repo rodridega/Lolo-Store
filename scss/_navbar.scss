@@ -10,7 +10,7 @@
 }
 
 .banner {
-  background-image: url(/assets/lolo-ban.png);
+  background-image: url(../assets/lolo-ban.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: inset 0 0 0 1000px rgba(161, 149, 159, 0.9);
-  
+
   h1,
   a {
     width: fit-content;
@@ -34,17 +34,17 @@
     margin: 40px 10px;
     border: none;
   }
-  .navbar-toggler:focus{
+  .navbar-toggler:focus {
     box-shadow: none;
   }
 }
-
 
 .navbar {
   padding: 0;
   margin: 0;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .container-fluid {

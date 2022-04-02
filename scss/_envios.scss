@@ -13,10 +13,13 @@
   img {
     width: 20%;
   }
+  p{
+    font-family: roboto;
+  }
   h2{
     font-family: bunya;
     color: $color2;
-    font-weight: lighter;
+   
 
   }
   h4 {
@@ -43,16 +46,16 @@
   }
 
   .chart {
+    margin-top: 3rem;
     h4 {
       font-size: 20px;
-      font-family: bunya-thin;
       margin-bottom: 3rem;
       color: $color2;
       font-weight: lighter;
     }
     p {
-      font-family: bunya-light;
-      font-size: 18px;
+      font-family: bunya;
+      font-size: 16px;
       line-height: 0.3;
     }
   }
