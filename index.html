@@ -1,245 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Lolo Store</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid">
-          <div class="banner">
-            <h1>Lolo Store</h1>
-            <a class="navbar-brand" href="index.html#hero"
-              ><img src="./assets/logololo.png" alt="" id="logo"
-            /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Lolo Store</title>
+</head>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav text-center">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html#sobre__nosotras"
-                >Sobre Nosotras</a
-              >
-              <a class="nav-link" href="index.html#ventas">Ventas</a>
-              <a class="nav-link" href="index.html#envios">Envios</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--Seccion de Inicio/Hero-->
-    <section class="hero" id="hero">
-      <div class="btn__hero">
-        <form action="https://www.instagram.com/lolostore_ok/">
-          <button class="btn">Contactanos</button>
-        </form>
-      </div>
-    </section>
+<body>
+  <!-- Barra de Navegacion responsive -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <div class="banner">
+          <h1>Lolo Store</h1>
+          <a class="navbar-brand" href="index.html#hero"><img src="./assets/logololo.png" alt="" id="logo" /></a>
 
-    <section class="sobre__nosotras text-center" id="sobre__nosotras">
-      <h2 class="my-5">Sobre Nosotras</h2>
-      <div class="conteiner">
-        <p>
-          ¡Hola! ¿Como estás? ¿Nos conoces? Nuestro nombre es Aixa y Lorena.
-          Somos madre e hija y en el año <span>2020</span> decidimos emprender
-          este sueño que es LOLO STORE . Un pequeño emprendimiento a que nació
-          jugando en el living de casa durante la cuarentena. LOLO nace de la
-          necesidad de traer al mercado un producto que sea competitivo en el
-          mercado por su calidad y precio pero sobre todo que nos brinde la
-          comodidad que todos queremos tener en casa Junto con toda la familia
-          llevamos a cabo este proyecto que gracias a vos, todos los días crece
-          un poquito más. ¡Que tengas un muy lindo día... y ojalá como nosotras
-          puedas llevar tu sueño a cabo!
-          <br />
-          Contamos con dos secciones, una mayorista u uña minorista. En caso de
-          querer realizar compras mayorista, ponte en contacto con nosotras y te
-          haremos llegar nuestra lista de productos con detalle de precios y
-          stock
-        </p>
-      </div>
-    </section>
-    <a class="whatsapp" href="#">
-      <img src="./assets/icons8-whatsapp.svg" alt="whatsapp" />
-    </a>
-    <section class="ventasXMayor" id="ventas">
-      <div class="containerMio">
-        <h2>Ventas por Mayor y Menor</h2>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./assets/pantalon11.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/pantalon8.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/remera.jpg" class="d-block w-100" alt="..." />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-
-        <p>
-          Contamos con dos secciones, una mayorista y otra minorista. <br />
-          En caso de querer realizar una compra mayorista, ponete en contacto
-          con nosotras y te haremos llegar nuestra lista de productos con
-          detalle de precios y stock.
-        </p>
-        <a href="https://www.instagram.com/lolostore_ok/"
-          ><button class="btn" id="botonVentas">
-            Seguinos en Instagram
-          </button></a
-        >
-      </div>
-    </section>
-
-    <section class="galery">
-      <div class="galeria-conteiner">
-        <div class="item1">
-          <img
-            src="./assets/pantalon5.jpeg"
-            alt="pantalon5"
-            class="galeria__img"
-          />
-        </div>
-        <div class="item2">
-          <img
-            src="./assets/pantalon3.jpeg"
-            alt="pantalon3"
-            class="galeria__img"
-          />
-        </div>
-        <div class="item3">
-          <img
-            src="./assets/pantalon2.jpeg"
-            alt="pantalon2"
-            class="galeria__img"
-          />
-        </div>
-        <div class="item4">
-          <img
-            src="./assets/pantalon6.jpeg"
-            alt="pantalon6"
-            class="galeria__img"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="envios" id="envios">
-        <h2>Envíos</h2>
-        <img src="./assets/envios.png" alt="logoEnvios" />
-        <p class="mx-5 px-3">
-          Contamos con envíos a todo el país a través de correo argentino y
-          también ofrecemos un envío Low Cost a Gran Parte de Buenos Aires.
-        </p>
-        <div id="mobile">
-          <div class="chart">
-            <h4>Martes & Viernes</h4>
-            <p>Zona Norte</p>
-            <p>Zona Oeste</p>
-          </div>
-          <div class="chart">
-            <h4>Miercoles y Sabados</h4>
-            <p>Zona Sur</p>
-            <p>Capital Federal</p>
-          </div>
-        </div>
-        <div id="desktop">
-          <div class="cards">
-            <h4>Martes & Viernes</h4>
-            <p>Zona Norte</p>
-            <p>Zona Oeste</p>
-          </div>
-          <div class="cards">
-            <h4>Miercoles y Sabados</h4>
-            <p>Zona Sur</p>
-            <p>Capital Federal</p>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center">
+            <a class="nav-link active" aria-current="page" href="index.html#sobre__nosotras">Sobre Nosotras</a>
+            <a class="nav-link" href="index.html#ventas">Ventas</a>
+            <a class="nav-link" href="index.html#envios">Envios</a>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
+  <!--Seccion de Inicio/Hero-->
+  <section class="hero" id="hero">
+    <div class="btn__hero">
+      <form action="https://www.instagram.com/lolostore_ok/">
+        <button class="btn">Contactanos</button>
+      </form>
+    </div>
+  </section>
+  <!--Seccion Sobre nosotras-->
 
-    <footer>
-      <div class="footerDiv">
-        <img src="./assets/logololo.png" alt="logololo" />
-        <h3>Lolo Store</h3>
-      </div>
-      <div class="footerDiv">
-        <h3>Seguinos!</h3>
-        <a href="https://www.instagram.com/lolostore_ok/"
-          ><img
-            src="./assets/instagram_icon-icons.com_65435.svg"
-            alt="instagram"
-            id="instagram"
-        /></a>
-      </div>
-      <div class="footerDiv">
-        <h4>Métodos de pago</h4>
-        <p>Efectivo</p>
-        <p>Transferencia bancaria</p>
-        <p>Débito/Crédito</p>
-      </div>
-    </footer>
+  <section class="sobre__nosotras text-center" id="sobre__nosotras">
+    <h2 class="my-5">Sobre Nosotras</h2>
+    <div class="conteiner">
+      <p>
+        ¡Hola! ¿Como estás? ¿Nos conoces? Nuestro nombre es Aixa y Lorena.
+        Somos madre e hija y en el año <span>2020</span> decidimos emprender
+        este sueño que es LOLO STORE . Un pequeño emprendimiento a que nació
+        jugando en el living de casa durante la cuarentena. LOLO nace de la
+        necesidad de traer al mercado un producto que sea competitivo en el
+        mercado por su calidad y precio pero sobre todo que nos brinde la
+        comodidad que todos queremos tener en casa Junto con toda la familia
+        llevamos a cabo este proyecto que gracias a vos, todos los días crece
+        un poquito más. ¡Que tengas un muy lindo día... y ojalá como nosotras
+        puedas llevar tu sueño a cabo!
+        <br />
+        Contamos con dos secciones, una mayorista u uña minorista. En caso de
+        querer realizar compras mayorista, ponte en contacto con nosotras y te
+        haremos llegar nuestra lista de productos con detalle de precios y
+        stock
+      </p>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!--Boton de Whatsapp-->
+
+  </section>
+  <a class="whatsapp" href="#">
+    <img src="./assets/icons8-whatsapp.svg" alt="whatsapp" />
+  </a>
+
+  <!--Seccion de Carrusel-->
+
+  <section class="ventasXMayor" id="ventas">
+    <div class="containerMio">
+      <h2>Ventas por Mayor y Menor</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/pantalon11.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/pantalon8.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/remera.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p>
+        Contamos con dos secciones, una mayorista y otra minorista. <br />
+        En caso de querer realizar una compra mayorista, ponete en contacto
+        con nosotras y te haremos llegar nuestra lista de productos con
+        detalle de precios y stock.
+      </p>
+      <a href="https://www.instagram.com/lolostore_ok/"><button class="btn" id="botonVentas">
+          Seguinos en Instagram
+        </button></a>
+    </div>
+  </section>
+  <!--Galeria de imagenes-->
+
+  <section class="galery">
+    <div class="galeria-conteiner">
+      <div class="item1">
+        <img src="./assets/pantalon5.jpeg" alt="pantalon5" class="galeria__img" />
+      </div>
+      <div class="item2">
+        <img src="./assets/pantalon3.jpeg" alt="pantalon3" class="galeria__img" />
+      </div>
+      <div class="item3">
+        <img src="./assets/pantalon2.jpeg" alt="pantalon2" class="galeria__img" />
+      </div>
+      <div class="item4">
+        <img src="./assets/pantalon6.jpeg" alt="pantalon6" class="galeria__img" />
+      </div>
+    </div>
+  </section>
+  <!--Seccion de Envios-->
+
+  <section>
+    <div class="envios" id="envios">
+      <h2>Envíos</h2>
+      <img src="./assets/envios.png" alt="logoEnvios" />
+      <p class="mx-5 px-3">
+        Contamos con envíos a todo el país a través de correo argentino y
+        también ofrecemos un envío Low Cost a Gran Parte de Buenos Aires.
+      </p>
+      <div id="mobile">
+        <div class="chart">
+          <h4>Martes & Viernes</h4>
+          <p>Zona Norte</p>
+          <p>Zona Oeste</p>
+        </div>
+        <div class="chart">
+          <h4>Miercoles y Sabados</h4>
+          <p>Zona Sur</p>
+          <p>Capital Federal</p>
+        </div>
+      </div>
+      <div id="desktop">
+        <div class="cards">
+          <h4>Martes & Viernes</h4>
+          <p>Zona Norte</p>
+          <p>Zona Oeste</p>
+        </div>
+        <div class="cards">
+          <h4>Miercoles y Sabados</h4>
+          <p>Zona Sur</p>
+          <p>Capital Federal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--footer con redes-->
+
+  <footer>
+    <div class="footerDiv">
+      <img src="./assets/logololo.png" alt="logololo" />
+      <h3>Lolo Store</h3>
+    </div>
+    <div class="footerDiv">
+      <h3>Seguinos!</h3>
+      <a href="https://www.instagram.com/lolostore_ok/">
+        <?xml version="1.0" ?>
+        <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+          enable-background="new 0 0 144.083 144" height="144px" id="Instagram" version="1.1" viewBox="0 0 144.083 144"
+          width="144.083px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path
+            d="M72.041,11.166c-33.543,0-60.833,27.29-60.833,60.834c0,33.544,27.29,60.834,60.833,60.834  c33.544,0,60.834-27.29,60.834-60.834C132.875,38.456,105.584,11.166,72.041,11.166z M72.041,126.834  c-30.235,0-54.833-24.599-54.833-54.834c0-30.235,24.598-54.834,54.833-54.834c30.235,0,54.834,24.599,54.834,54.834  C126.875,102.235,102.276,126.834,72.041,126.834z" />
+          <path
+            d="M91.076,42.701H53.006c-5.615,0-10.184,4.568-10.184,10.184v38.245c0,5.615,4.568,10.184,10.184,10.184h38.069  c5.615,0,10.184-4.568,10.184-10.184V52.884C101.259,47.269,96.691,42.701,91.076,42.701z M80.847,71.899  c0,4.856-3.95,8.806-8.806,8.806s-8.806-3.95-8.806-8.806c0-2.409,0.974-4.593,2.546-6.184H78.3  C79.874,67.306,80.847,69.49,80.847,71.899z M83.4,50.849h8.92v9.189H83.4V50.849z M91.076,95.313H53.006  c-2.307,0-4.184-1.877-4.184-4.184V65.715h9.784c-0.871,1.885-1.371,3.975-1.371,6.184c0,8.165,6.642,14.806,14.806,14.806  s14.806-6.642,14.806-14.806c0-2.209-0.5-4.299-1.371-6.184h9.783v25.414C95.259,93.436,93.382,95.313,91.076,95.313z" />
+        </svg>
+      </a>
+    </div>
+    <div class="footerDiv">
+      <h4>Métodos de pago</h4>
+      <p>Efectivo</p>
+      <p>Transferencia bancaria</p>
+      <p>Débito/Crédito</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

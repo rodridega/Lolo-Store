@@ -158,8 +158,10 @@ footer p {
   margin: 0;
 }
 
-footer #instragram {
-  fill: green;
+footer #Instagram {
+  fill: #F9E4E2;
+  width: 70px;
+  margin-top: -25px;
 }
 
 @font-face {
@@ -170,16 +172,6 @@ footer #instragram {
 @font-face {
   font-family: bunya-thin;
   src: url(../fonts/Bunya-Thin_PERSONAL.ttf);
-}
-
-@font-face {
-  font-family: bunya-light;
-  src: url(../fonts/Bunya-Light_PERSONAL.ttf);
-}
-
-@font-face {
-  font-family: bunya-black;
-  src: url(/fonts/Bunya-Black_PERSONAL.ttf);
 }
 
 @font-face {
@@ -636,15 +628,19 @@ body {
     grid-area: parrafo;
     font-size: 15px;
     text-align: left;
-    margin: 0rem 3rem;
+    width: 50%;
+    -ms-grid-column-align: center;
+        justify-self: center;
     padding: 0;
+  }
+  .ventasXMayor .containerMio a {
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .ventasXMayor .containerMio button {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: boton;
-    -ms-grid-column-align: center;
-        justify-self: center;
     width: 30%;
     margin: 0rem;
   }
