@@ -293,7 +293,14 @@ body {
 }
 
 .ventasXMayor a {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ventasXMayor #botonVentas {
@@ -301,7 +308,7 @@ body {
   border-radius: 20px;
   font-family: roboto;
   font-size: 14px;
-  width: 70%;
+  width: 60%;
   background-color: #F8F0EF;
   margin: 2.5rem;
   padding: 0.75rem 0rem;
@@ -334,7 +341,7 @@ body {
   display: block;
 }
 
-.envios #desk {
+.envios #desktop {
   display: none;
 }
 
@@ -643,6 +650,9 @@ body {
     grid-area: boton;
     width: 30%;
     margin: 0rem;
+  }
+  .ventasXMayor .containerMio #botonVentas {
+    width: 35%;
   }
   .galeria-conteiner {
     margin: 5rem 0rem;
