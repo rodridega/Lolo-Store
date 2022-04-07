@@ -87,15 +87,16 @@
   height: 200px;
 }
 
-#hero .btn-check:focus + .btn, #hero .btn:focus {
+#hero .btn-check:focus + .btn,
+#hero .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#hero button {
+#hero a {
+  -webkit-appearance: none;
   border-radius: 2rem;
   width: 180px;
-  height: 45px;
   font-size: 13px;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -105,7 +106,7 @@
   color: #CEBFCB;
 }
 
-#hero button:hover {
+#hero a:hover {
   color: white;
 }
 
@@ -235,6 +236,12 @@ body {
   font-family: bunya;
 }
 
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .ventasXMayor {
   background-color: #EED2CD;
 }
@@ -304,6 +311,7 @@ body {
 }
 
 .ventasXMayor #botonVentas {
+  color: black;
   border: none;
   border-radius: 20px;
   font-family: roboto;
