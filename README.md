@@ -12,7 +12,7 @@ Tienda de pijamas
 Grosso Yamila
 [LinkedIn](https://www.linkedin.com/in/yamilagrosso/)
 
-### Programacion Frontend
+### Programación Frontend
 Cerullo Luciano
 [LinkedIn](https://www.linkedin.com/in/luciano-cerullo-9b948022a/)
 
