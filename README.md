@@ -1,4 +1,7 @@
 # Lolo-Store
+
+![Logo](./assets/logololo.png)
+
 Tienda de pijamas
 
 ## Proyecto Real de Coderhouse 
@@ -24,5 +27,5 @@ Deganutti Rodrigo
 * BOOTSTRAP para realiza la  Navbar y el Carrousel
 (https://getbootstrap.com/)
 
-![Logo](./assets/logololo.jpg)
+
 
